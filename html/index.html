@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Windows Playground Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Windows Playground Dashboard</h1>
+
+        <div class="grid">
+            <div class="card" id="meminfo">
+                <h2>Memory Info</h2>
+                <p>Total: <span id="totalphys">...</span></p>
+                <p>Available: <span id="availphys">...</span></p>
+                <p>Usage: <span id="memload">...</span>%</p>
+            </div>
+
+            <div class="card" id="resolution">
+                <h2>Screen Resolution</h2>
+                <p><span id="scrw">...</span> x <span id="scrh">...</span></p>
+            </div>
+
+            <div class="card" id="system">
+                <h2>System Info</h2>
+                <p>Uptime: <span id="uptime">...</span></p>
+                <p>Battery: <span id="battery_percentage">...</span>%</p>
+                <p>Battery life: <span id="battery_duration">...</span></p>
+            </div>
+
+            <div class="card" id="userinfo">
+                <h2>User Info</h2>
+                <p>Username: <span id="username">...</span></p>
+            </div>
+
+            <div class="card" id="messagebox">
+                <h2>Send MessageBoxA</h2>
+                <input type="text" id="mboxtext" placeholder="Type message and press Enter" />
+            </div>
+
+            <div class="card" id="uninstall">
+                <h2>Uninstall App</h2>
+                <select id="uninstall-list">
+                </select>
+                <button class="confirm-btn" id="uninstall-confirm">Uninstall</button>
+                <button class="confirm-btn" id="uninstall-refresh">Refresh List</button>
+            </div>
+
+            <div class="card">
+                <h2>Serial Ports</h2>
+                <div class="list" id="serial-ports">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

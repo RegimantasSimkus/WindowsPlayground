@@ -1,0 +1,80 @@
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: rgb(245, 245, 254);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border: 1px solid rgba(200, 200, 200);
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(0, 100, 200);
+}
+
+.card p {
+    margin: 6px 0;
+}
+
+#mboxtext {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid rgba(200, 200, 200, 50);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+    overflow-y: scroll;
+    border: solid 1px black;
+    margin: 4px 0 4px 0;
+    padding: 4px 0 4px 0;
+}
+
+.confirm-btn {
+    padding: 4px;
+    background-color: white;
+    outline: 1px solid black;
+    border-radius: 4px;
+    font: inherit;
+    border: none;
+    color: black;
+}
+
+.confirm-btn:hover {
+    background-color: red;
+    outline: none;
+    color: white;
+}
