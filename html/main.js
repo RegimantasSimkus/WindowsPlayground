@@ -44,7 +44,7 @@ async function updateDashboard() {
 
         const sys = await fetchJSON("/api/system");
         document.getElementById("uptime").textContent = formatUptime(sys.uptime);
-        document.getElementById("battery_percentage").textContent = sys.battery_percentage;
+        document.getElementById("battery_percentage").textContent = sys.battery_percentage == 0xff ? "Unknown" : `${sys.battery_percentage}%`;
         document.getElementById("battery_duration").textContent = formatBatteryLife(sys.battery_duration);
 
         const user = await fetchJSON("/api/userinfo");
